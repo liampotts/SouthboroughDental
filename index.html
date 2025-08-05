@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Southborough Dental Partners provides trusted dental care with a patient-first approach." />
+  <meta property="og:title" content="Southborough Dental Partners" />
+  <meta property="og:description" content="Providing quality dental services with care and compassion in Southborough." />
+  <meta property="og:image" content="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/dental-chairs.jpg" />
   <title>Southborough Dental Partners</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -11,26 +15,33 @@
   <!-- Header -->
   <header class="flex justify-between items-center p-6 border-b border-gray-200">
     <div class="text-blue-700 font-bold text-xl">Southborough Dental Partners</div>
-    <nav class="space-x-6 text-gray-700">
-      <a href="#" class="hover:text-blue-700">Home</a>
-      <a href="#services" class="hover:text-blue-700">Services</a>
-      <a href="#about" class="hover:text-blue-700">About</a>
-      <a href="#contact" class="hover:text-blue-700">Contact</a>
+    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle navigation">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <nav id="menu" class="hidden flex-col absolute top-full left-0 w-full bg-white border-b border-gray-200 p-4 md:static md:flex md:flex-row md:space-x-6 text-gray-700">
+      <a href="#" class="py-1 md:py-0 hover:text-blue-700">Home</a>
+      <a href="#services" class="py-1 md:py-0 hover:text-blue-700">Services</a>
+      <a href="#about" class="py-1 md:py-0 hover:text-blue-700">About</a>
+      <a href="#contact" class="py-1 md:py-0 hover:text-blue-700">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="relative bg-blue-600 text-white">
-    <img src="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/dental-chairs.jpg" alt="Dental chairs" class="w-full h-64 object-cover opacity-70" />
-    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-      <h1 class="text-4xl font-extrabold mb-4">Your Trusted Dental Care</h1>
-      <p class="mb-6 max-w-xl">Providing quality dental services with care and compassion</p>
-      <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded shadow font-semibold hover:bg-gray-100 transition">Request Appointment</a>
-    </div>
-  </section>
+  <main>
+    <!-- Hero -->
+    <section class="relative text-white">
+      <img src="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/dental-chairs.jpg" alt="Dental chairs" class="w-full h-64 md:h-96 object-cover" />
+      <div class="absolute inset-0 bg-blue-900/70"></div>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-4xl font-extrabold mb-4">Your Trusted Dental Care</h1>
+        <p class="mb-6 max-w-xl">Providing quality dental services with care and compassion</p>
+        <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded shadow font-semibold hover:bg-gray-100 transition">Request Appointment</a>
+      </div>
+    </section>
 
-  <!-- Services -->
-  <section id="services" class="max-w-6xl mx-auto py-16 px-6">
+    <!-- Services -->
+    <section id="services" class="max-w-6xl mx-auto py-16 px-6">
     <h2 class="text-3xl font-bold mb-12 text-center text-blue-700">Our Services</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
@@ -63,21 +74,24 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="max-w-6xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Contact Us</h2>
-    <form class="max-w-xl mx-auto space-y-6">
-      <input type="text" placeholder="Full Name" class="w-full p-3 border rounded" required />
-      <input type="email" placeholder="Email Address" class="w-full p-3 border rounded" required />
-      <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded" required></textarea>
-      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Send Message</button>
-    </form>
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="max-w-6xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Contact Us</h2>
+      <form action="#" method="POST" class="max-w-xl mx-auto space-y-6">
+        <input type="text" placeholder="Full Name" class="w-full p-3 border rounded" required />
+        <input type="email" placeholder="Email Address" class="w-full p-3 border rounded" required />
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded" required></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-blue-700 text-white py-8 text-center">
     <p>© 2025 Southborough Dental Partners. All rights reserved.</p>
   </footer>
+
+  <script src="main.js"></script>
 
 </body>
 </html>
