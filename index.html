@@ -1,97 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Southborough Dental Partners provides trusted dental care with a patient-first approach." />
-  <meta property="og:title" content="Southborough Dental Partners" />
-  <meta property="og:description" content="Providing quality dental services with care and compassion in Southborough." />
-  <meta property="og:image" content="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/dental-chairs.jpg" />
   <title>Southborough Dental Partners</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white font-sans text-gray-900">
 
-  <!-- Header -->
-  <header class="flex justify-between items-center p-6 border-b border-gray-200">
-    <div class="text-blue-700 font-bold text-xl">Southborough Dental Partners</div>
-    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle navigation">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-    <nav id="menu" class="hidden flex-col absolute top-full left-0 w-full bg-white border-b border-gray-200 p-4 md:static md:flex md:flex-row md:space-x-6 text-gray-700">
-      <a href="#" class="py-1 md:py-0 hover:text-blue-700">Home</a>
-      <a href="#services" class="py-1 md:py-0 hover:text-blue-700">Services</a>
-      <a href="#about" class="py-1 md:py-0 hover:text-blue-700">About</a>
-      <a href="#contact" class="py-1 md:py-0 hover:text-blue-700">Contact</a>
-    </nav>
-  </header>
+  <!-- Top contact bar -->
+  <div class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center py-3 px-6 text-sm text-gray-700">
+      <div class="flex items-center space-x-6">
+        <div class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7a2 2 0 002 2z"/></svg>
+          <span>(508) 357-8800</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 12.414a2 2 0 10-2.828 2.828l4.243 4.243a8 8 0 1111.314-11.314 8 8 0 01-11.314 11.314z"/></svg>
+          <span>Southborough, MA 01772</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"/></svg>
+          <span>Mon - Fri: 9:30am - 5:30pm</span>
+        </div>
+      </div>
+      <div>
+        <select aria-label="Language" class="border border-gray-300 rounded-md text-gray-700 p-1">
+          <option>English</option>
+          <option>Spanish</option>
+        </select>
+      </div>
+    </div>
+  </div>
 
-  <main>
-    <!-- Hero -->
-    <section class="relative text-white">
-      <img src="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/dental-chairs.jpg" alt="Dental chairs" class="w-full h-64 md:h-96 object-cover" />
-      <div class="absolute inset-0 bg-blue-900/70"></div>
-      <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-4xl font-extrabold mb-4">Your Trusted Dental Care</h1>
-        <p class="mb-6 max-w-xl">Providing quality dental services with care and compassion</p>
-        <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded shadow font-semibold hover:bg-gray-100 transition">Request Appointment</a>
+  <!-- Main Navigation -->
+  <nav class="bg-teal-600">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div class="text-white font-bold text-xl flex items-center space-x-2">
+        <img src="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/southborough-dental-partners-logo.svg" alt="Logo" class="h-8" />
+        <span>Southborough Dental Partners</span>
       </div>
-    </section>
+      <div class="hidden md:flex space-x-8 text-white font-semibold text-sm uppercase">
+        <a href="#" class="hover:text-gray-200">Welcome</a>
+        <a href="#" class="hover:text-gray-200">About</a>
+        <a href="#" class="hover:text-gray-200">Services</a>
+        <a href="#" class="hover:text-gray-200">Pediatric Dentistry</a>
+        <a href="#" class="hover:text-gray-200">Dental Emergency</a>
+        <a href="#" class="hover:text-gray-200">New Patients</a>
+        <a href="#" class="hover:text-gray-200">Book Appointment</a>
+      </div>
+      <button class="md:hidden text-white focus:outline-none" aria-label="Open menu">
+        <!-- Hamburger icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
 
-    <!-- Services -->
-    <section id="services" class="max-w-6xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold mb-12 text-center text-blue-700">Our Services</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Cleaning" class="w-16 mb-4 mx-auto" />
-        <h3 class="font-semibold text-xl mb-2 text-center">Dental Cleaning</h3>
-        <p class="text-gray-600 text-center">Professional teeth cleaning to keep your smile healthy and bright.</p>
-      </div>
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965574.png" alt="Whitening" class="w-16 mb-4 mx-auto" />
-        <h3 class="font-semibold text-xl mb-2 text-center">Teeth Whitening</h3>
-        <p class="text-gray-600 text-center">Safe and effective whitening treatments to enhance your smile.</p>
-      </div>
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965606.png" alt="Fillings" class="w-16 mb-4 mx-auto" />
-        <h3 class="font-semibold text-xl mb-2 text-center">Fillings & Restorations</h3>
-        <p class="text-gray-600 text-center">Restoring tooth health and function with quality materials.</p>
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/dental-chairs.jpg" alt="Smiling couple" class="w-full h-[600px] object-cover brightness-90" />
+    <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex items-center px-6 md:px-20">
+      <div class="max-w-lg">
+        <h1 class="text-4xl font-semibold text-teal-700 mb-4">Cosmetic Dentistry</h1>
+        <p class="mb-6 text-teal-700">We offer complete mouth restoration. Learn more today</p>
+        <div class="flex space-x-4">
+          <a href="tel:5083578800" class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full font-semibold shadow">Call Now</a>
+          <a href="#" class="bg-white hover:bg-gray-100 text-teal-600 px-6 py-3 rounded-full font-semibold shadow border border-teal-600">Book Online</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- Services Section -->
+  <section id="services" class="max-w-7xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-12 text-center text-teal-700">Our Services</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div class="border rounded-lg shadow hover:shadow-lg p-6 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Dental Cleaning" class="w-16 mx-auto mb-4" />
+        <h3 class="font-semibold text-xl mb-2">Dental Cleaning</h3>
+        <p class="text-gray-700">Professional teeth cleaning to keep your smile healthy and bright.</p>
+      </div>
+      <div class="border rounded-lg shadow hover:shadow-lg p-6 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965574.png" alt="Teeth Whitening" class="w-16 mx-auto mb-4" />
+        <h3 class="font-semibold text-xl mb-2">Teeth Whitening</h3>
+        <p class="text-gray-700">Safe and effective whitening treatments to enhance your smile.</p>
+      </div>
+      <div class="border rounded-lg shadow hover:shadow-lg p-6 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965606.png" alt="Fillings" class="w-16 mx-auto mb-4" />
+        <h3 class="font-semibold text-xl mb-2">Fillings & Restorations</h3>
+        <p class="text-gray-700">Restoring tooth health and function with quality materials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
   <section id="about" class="bg-gray-50 py-16 px-6">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-      <img src="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/dentist-team.jpg" alt="Dental team" class="rounded-lg shadow-lg w-full md:w-1/2 object-cover" />
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <img src="https://southboroughdentalpartners.com/wp-content/uploads/2020/03/dentist-team.jpg" alt="Dental team" class="w-full md:w-1/2 rounded-lg shadow-lg object-cover" />
       <div class="md:w-1/2">
-        <h2 class="text-3xl font-bold mb-4 text-blue-700">About Southborough Dental Partners</h2>
-        <p class="text-gray-700 mb-4">At Southborough Dental Partners, we prioritize your oral health with compassionate, patient-focused care. Our experienced team uses the latest technology to provide comprehensive dental services.</p>
+        <h2 class="text-3xl font-bold mb-6 text-teal-700">About Southborough Dental Partners</h2>
+        <p class="mb-4 text-gray-700">At Southborough Dental Partners, we prioritize your oral health with compassionate, patient-focused care. Our experienced team uses the latest technology to provide comprehensive dental services.</p>
         <p class="text-gray-700">Whether you need routine check-ups or specialized treatments, we’re here to help you achieve a healthy, beautiful smile.</p>
       </div>
     </div>
   </section>
 
-    <!-- Contact -->
-    <section id="contact" class="max-w-6xl mx-auto py-16 px-6">
-      <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Contact Us</h2>
-      <form action="#" method="POST" class="max-w-xl mx-auto space-y-6">
-        <input type="text" placeholder="Full Name" class="w-full p-3 border rounded" required />
-        <input type="email" placeholder="Email Address" class="w-full p-3 border rounded" required />
-        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded" required></textarea>
-        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Send Message</button>
-      </form>
-    </section>
-  </main>
-
   <!-- Footer -->
-  <footer class="bg-blue-700 text-white py-8 text-center">
+  <footer class="bg-teal-700 text-white py-8 text-center">
     <p>© 2025 Southborough Dental Partners. All rights reserved.</p>
   </footer>
-
-  <script src="main.js"></script>
 
 </body>
 </html>
