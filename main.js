@@ -1,10 +1,16 @@
 // Toggle mobile navigation menu
 window.addEventListener('DOMContentLoaded', () => {
-  const button = document.getElementById('menu-btn');
+  const openBtn = document.getElementById('menu-btn');
+  const closeBtn = document.getElementById('menu-close');
   const menu = document.getElementById('menu');
-  if (button && menu) {
-    button.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
+  if (menu) {
+    if (openBtn) openBtn.addEventListener('click', () => {
+      menu.classList.toggle('translate-x-0');
+    });
+    if (closeBtn) closeBtn.addEventListener('click', () => {
+      menu.classList.toggle('translate-x-0');
     });
   }
+  // Initialize AOS animations
+  if (window.AOS) AOS.init({ once: true });
 });
