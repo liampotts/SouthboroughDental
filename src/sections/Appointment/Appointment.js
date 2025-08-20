@@ -18,7 +18,8 @@ const Appointment = () => {
 
                             <div className="location-name">
                                 <AiFillHome />
-                                <p>35 West Dental Street California 1004</p>
+                                <p>21 Turnpike Road
+                                Southborough, MA 01772</p>
                             </div>
                         </div>
                     </div>

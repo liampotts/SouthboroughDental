@@ -35,18 +35,18 @@ const Footer = () => {
     const footerContacts = [
         {
             'title': 'Phone Number',
-            'info': '+088 123 654 987',
+            'info': '(508) 357- 8800',
             'icon': call
         },
         {
             'title': 'Open Hour',
-            'info': '09:00 AM - 18:00 PM',
+            'info': ['Monday - Friday: 8 AM - 5:30 PM', 'Saturday: 10 AM - 2 PM'],
             'icon': time
         },
         {
             'title': 'Clinic Address',
-            'info': '35 West Dental Street California 1004',
-            'icon': location
+            'info': '21 Turnpike Road Southborough, MA 01772',
+            'icon': location    
         }
     ]
 
@@ -85,13 +85,19 @@ const Footer = () => {
 
                             {
                                 footerContacts.map(footerContact => {
-                                    return  <div className="contact-list">
+                                    return  <div className="contact-list" key={footerContact.title}>
                                                 <div className="contact-icon">
                                                     <img src={footerContact.icon} alt="call" />
                                                 </div>
                                                 <div className="contact-text">
                                                     <p>{footerContact.title}</p>
-                                                    <h5>{footerContact.info}</h5>
+                                                    {Array.isArray(footerContact.info) ? (
+                                                        footerContact.info.map((info, index) => (
+                                                            <h5 key={index}>{info}</h5>
+                                                        ))
+                                                    ) : (
+                                                        <h5>{footerContact.info}</h5>
+                                                    )}
                                                 </div>
                                             </div>
                                 })
