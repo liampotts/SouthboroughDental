@@ -20,8 +20,9 @@ const Banner = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
-                                    <h1>Entrust your smile to professionals</h1>
-                                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                                    <h1>Southborough Dental Partners</h1>
+                                    <p>We Accept Most Major Insurances
+                                    Including MassHealth for All Ages</p>
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
@@ -34,7 +35,7 @@ const Banner = () => {
                                             </div>
                                             <div className='call-text'>
                                                 <p>Dental 24H Emergency</p>
-                                                <h6>03 482 394 123</h6>
+                                                <h6>(508) 357- 8800</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -51,8 +52,8 @@ const Banner = () => {
                                             <img src={doctorImg} alt="doctor" />
                                         </div>
                                         <div className='info-text'>
-                                            <p>Dr. Samantha Alice</p>
-                                            <p><small>Consultant</small></p>
+                                            <p>Dr. Husam Al Khateeb</p>
+                                            <p><small>Head Dentist</small></p>
                                         </div>
                                     </div>  
 
