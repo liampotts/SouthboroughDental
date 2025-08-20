@@ -28,6 +28,15 @@ const Navbar = () => {
         }
     ];
 
+    const languages = [
+        { code: 'en', label: 'EN' },
+        { code: 'es', label: 'ES' },
+        { code: 'ru', label: 'RU' },
+        { code: 'pt', label: 'PT' },
+        { code: 'hi', label: 'HI' },
+        { code: 'ar', label: 'AR' }
+    ];
+
     return (
         <div className='main-nav'>
             <div className="container">
@@ -58,20 +67,16 @@ const Navbar = () => {
                                     <Link to="/contact">Book appointment</Link>
                                 </div>
                                 <div className="language-toggle btn-group" role="group">
-                                    <button
-                                        type="button"
-                                        className="btn btn-outline-secondary"
-                                        onClick={() => window.translate && window.translate('en')}
-                                    >
-                                        EN
-                                    </button>
-                                    <button
-                                        type="button"
-                                        className="btn btn-outline-secondary"
-                                        onClick={() => window.translate && window.translate('es')}
-                                    >
-                                        ES
-                                    </button>
+                                    {languages.map(({ code, label }) => (
+                                        <button
+                                            key={code}
+                                            type="button"
+                                            className="btn btn-outline-secondary"
+                                            onClick={() => window.translate && window.translate(code)}
+                                        >
+                                            {label}
+                                        </button>
+                                    ))}
                                 </div>
                             </div>
                         </div>
