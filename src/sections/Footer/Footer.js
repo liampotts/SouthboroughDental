@@ -58,7 +58,7 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p>Dental Care Seattle is a top-rated local practice for cosmetic, preventative, and restorative dentistry on First Hill</p>
+                        <p>Southborough Dental is a top-rated local practice for cosmetic, preventative, and restorative dentistry</p>
 
                         <div className="social-logo">
                             <p>Follow us on</p>
@@ -108,7 +108,7 @@ const Footer = () => {
 
                 <div className="copyright-area">
                     <div className='copy-text'>
-                        <p>&copy; Dentalist. All Right Reserved</p>
+                        <p>&copy; Southborough Dental. All Right Reserved</p>
                     </div>  
                     <div className='copy-links'>
                         <ul>

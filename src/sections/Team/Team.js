@@ -33,10 +33,9 @@ const Team = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7">
-                        <SectionTitle 
+                        <SectionTitle
                             subTitle="Meet our Team"
-                            title="Get to know the dentalist
-                            dental Team"
+                            title="Get to know the Southborough Dental team"
                         />
                     </div>
 
