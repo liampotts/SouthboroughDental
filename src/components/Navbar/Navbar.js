@@ -28,6 +28,15 @@ const Navbar = () => {
         }
     ];
 
+    const languages = [
+        { code: 'en', label: 'EN' },
+        { code: 'es', label: 'ES' },
+        { code: 'ru', label: 'RU' },
+        { code: 'pt', label: 'PT' },
+        { code: 'hi', label: 'HI' },
+        { code: 'ar', label: 'AR' }
+    ];
+
     return (
         <div className='main-nav'>
             <div className="container">
@@ -53,8 +62,22 @@ const Navbar = () => {
                             </ul>
                             
                             {/* Navbar Button */}
-                            <div className="theme-btn">
-                                <Link to="/contact">Book appointment</Link>
+                            <div className="d-flex align-items-center">
+                                <div className="theme-btn me-3">
+                                    <Link to="/contact">Book appointment</Link>
+                                </div>
+                                <div className="language-toggle btn-group" role="group">
+                                    {languages.map(({ code, label }) => (
+                                        <button
+                                            key={code}
+                                            type="button"
+                                            className="btn btn-outline-secondary"
+                                            onClick={() => window.translate && window.translate(code)}
+                                        >
+                                            {label}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
