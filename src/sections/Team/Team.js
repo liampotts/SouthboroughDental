@@ -24,10 +24,11 @@ const Team = () => {
         <section className='team-section pt-100' data-aos="fade-up" data-aos-duration="2000">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-12">
+
+                    <div className="col-lg-7">
                         <SectionTitle
                             subTitle="Meet our Team"
-                            title="Get to know the Dental Team"
+                            title="Get to know the Southborough Dental team"
                         />
                         <p className='pt-3'>Southborough Dental Partners maintains the highest levels of accreditation. Our team pursues ongoing education to stay abreast of the latest dentistry trends.</p>
                     </div>
