@@ -53,8 +53,26 @@ const Navbar = () => {
                             </ul>
                             
                             {/* Navbar Button */}
-                            <div className="theme-btn">
-                                <Link to="/contact">Book appointment</Link>
+                            <div className="d-flex align-items-center">
+                                <div className="theme-btn me-3">
+                                    <Link to="/contact">Book appointment</Link>
+                                </div>
+                                <div className="language-toggle btn-group" role="group">
+                                    <button
+                                        type="button"
+                                        className="btn btn-outline-secondary"
+                                        onClick={() => window.translate && window.translate('en')}
+                                    >
+                                        EN
+                                    </button>
+                                    <button
+                                        type="button"
+                                        className="btn btn-outline-secondary"
+                                        onClick={() => window.translate && window.translate('es')}
+                                    >
+                                        ES
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
