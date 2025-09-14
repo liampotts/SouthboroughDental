@@ -20,14 +20,18 @@
         }
         .navbar-nav {
             flex-wrap: nowrap;
+            white-space: nowrap;
 
             .nav-item {
+                white-space: nowrap;
+                
                 .nav-link {
                     color: $color-black;
                     font-size: 15px;
                     font-weight: 600;
                     padding: 0;
-                    margin: 10px 30px;
+                    margin: 10px 20px;
+                    white-space: nowrap;
 
                     &:hover {
                         color: $color-blue;
@@ -81,9 +85,14 @@
 
         .navbar {
             .navbar-nav {
+                white-space: nowrap;
+                
                 .nav-item {
+                    white-space: nowrap;
+                    
                     .nav-link {
-                        margin: 10px 0px;
+                        margin: 10px 10px;
+                        white-space: nowrap;
                     }
                 }
             }
@@ -98,9 +107,14 @@
 
         .navbar {
             .navbar-nav {
+                white-space: nowrap;
+                
                 .nav-item {
+                    white-space: nowrap;
+                    
                     .nav-link {
                         margin: 10px 15px;
+                        white-space: nowrap;
                     }
                 }
             }
