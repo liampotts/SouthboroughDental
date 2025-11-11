@@ -12,11 +12,9 @@ const Footer = () => {
         { 'name' : 'Welcome', 'link' : '/' },
         { 'name' : 'About', 'link' : '/about' },
         { 'name' : 'Services', 'link' : '/services' },
-        { 'name' : 'Pediatric Dentistry', 'link' : '/services' },
         { 'name' : 'Dental Emergency', 'link' : '/contact' },
         { 'name' : 'New Patients', 'link' : '/contact' },
-        { 'name' : 'Patient Forms', 'link' : '/contact' },
-        { 'name' : 'Blog', 'link' : '/blogs' },
+        { 'name' : 'Contact', 'link' : '/contact' },
         { 'name' : 'Book Appointment', 'link' : '/contact' }
     ];
 
