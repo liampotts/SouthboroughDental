@@ -6,23 +6,23 @@ import iconFour from '../../assets/service/4.png';
 const ServicesData = [
     {
         'icon': iconOne,
-        'title': 'Dentures',
-        'description': 'Lorem ipsum is placeholder text commonly used in the graphic,',
+        'title': 'Dental Implants',
+        'description': 'Replace missing teeth with dental implants for permanent results.',
     },
     {
         'icon': iconTwo,
-        'title': 'Implants',
-        'description': 'Lorem ipsum is placeholder text commonly used in the graphic,',
+        'title': 'Teeth Whitening',
+        'description': 'Whiten your smile up to 8 shades brighter. Learn more today.',
     },
     {
         'icon': iconThree,
-        'title': 'Whitening',
-        'description': 'Lorem ipsum is placeholder text commonly used in the graphic,',
+        'title': 'Dental Emergency',
+        'description': 'Call now for tooth pain, tooth damage, or any other dental issue.',
     },
     {
         'icon': iconFour,
-        'title': 'Root Canal',
-        'description': 'Lorem ipsum is placeholder text commonly used in the graphic,',
+        'title': 'Comprehensive Care',
+        'description': 'Services include exams, cleanings, veneers, Invisalign, and more.',
     }
 ]
 

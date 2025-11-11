@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import './BlogCard.scss';
 
 const BlogCard = ({blog}) => {
-    const {title, img, description, category,url} = blog;
+    const {title, img, description, category, url, date} = blog;
+    const day = date?.day || '23';
+    const month = date?.month || 'Jan';
 
     return (
         <div className='col-lg-4 col-md-6 col-sm-6'>
@@ -11,8 +13,8 @@ const BlogCard = ({blog}) => {
                 <div className="blog-img">
                     <img src={img} alt="blog"/>
                     <div className="date">
-                        <h6>23</h6>
-                        <p>Jan</p>
+                        <h6>{day}</h6>
+                        <p>{month}</p>
                     </div>
                 </div>
                 <div className="blog-text">

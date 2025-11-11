@@ -25,9 +25,9 @@ const Appointment = () => {
                     <div className="col-lg-7 col-md-6">
                         <div className="appointment-form-area">
                             <SectionTitle 
-                            subTitle="BOOK APPOINTMENT"
-                            title="Care at Southborough Dental is pleasure"
-                            description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual"/>
+                            subTitle="Book Appointment"
+                            title="Schedule Your Dental Consultation Today"
+                            description='"*" indicates required fields'/>
 
                             <ContactForm />
                         </div>

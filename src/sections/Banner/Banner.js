@@ -20,13 +20,16 @@ const Banner = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
-                                    <h1>Southborough Dental Partners</h1>
-                                    <p>We Accept Most Major Insurances
-                                    Including MassHealth for All Ages</p>
+                                    <h1>
+                                        <span>Improve Your</span><br/>
+                                        <span>Dental Health</span>
+                                    </h1>
+                                    <p>We Accept Most Major Insurances Including MassHealth for All Ages.</p>
+                                    <p>Dental treatments for the entire family! We Accept MassHealth for All Ages.</p>
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
-                                            <Link to="/contact">Book an appointment</Link>
+                                            <Link to="/contact">Book Online</Link>
                                         </div>
 
                                         <div className="banner-call">
@@ -34,8 +37,8 @@ const Banner = () => {
                                                 <img src={icon} alt="icon" />
                                             </div>
                                             <div className='call-text'>
-                                                <p>Dental 24H Emergency</p>
-                                                <h6>(508) 357- 8800</h6>
+                                                <p>Call Now</p>
+                                                <h6>(508) 357-8800</h6>
                                             </div>
                                         </div>
                                     </div>

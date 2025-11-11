@@ -6,23 +6,23 @@ import iconFour from '../../assets/features/4.png';
 const featuresData = [
     {
         'icon': iconOne,
-        'title': 'Safety first',
-        'description': 'We prioritize safety with health checks and more'
+        'title': 'Improve your smile today!',
+        'description': 'Our office is well-equipped with the latest technology to provide quality care.'
     },
     {
         'icon': iconTwo,
-        'title': 'Insurance accepted',
-        'description': 'We’re in network with major insurers like Delta Dental, Aetna, and Cigna.'
+        'title': 'Experienced Southborough dentist',
+        'description': 'Our Southborough dentist has several years of experience offering a wide range of dental treatments.'
     },
     {
         'icon': iconThree,
-        'title': 'Full-service dentistry',
-        'description': 'Our clinic offer a full  of dental service, from exams to implants and veneers.'
+        'title': 'Comprehensive services for every family',
+        'description': 'Services include exams, cleanings, teeth whitening, dental implants, bridges, dentures, veneers, Invisalign, and more.'
     },
     {
         'icon': iconFour,
-        'title': 'No judgment ever',
-        'description': 'From floss bosses to sweet tooths, every mouth is welcome.'
+        'title': 'We invite you to explore our website',
+        'description': 'New patients are welcome and most insurances are accepted. Contact us today! We look forward to meeting you.'
     }
 ]
 

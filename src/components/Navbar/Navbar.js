@@ -7,34 +7,42 @@ const Navbar = () => {
 
     const navbarItems = [
         {
-            name: 'Home',
+            name: 'Welcome',
             path: '/',
         },
         {
-            name: 'About Us',
+            name: 'About',
             path: '/about',
         },
         {
-            name: 'Single Service',
-            path: '/singleservice',
+            name: 'Services',
+            path: '/services',
         },
         {
-            name: 'Blogs',
+            name: 'Pediatric Dentistry',
+            path: '/services',
+        },
+        {
+            name: 'Dental Emergency',
+            path: '/contact',
+        },
+        {
+            name: 'New Patients',
+            path: '/contact',
+        },
+        {
+            name: 'Blog',
             path: '/blogs',
         },
-        {
-            name: 'Contact Us',
-            path: '/contact',
-        }
     ];
 
     const languages = [
+        { code: 'ar', label: 'AR' },
         { code: 'en', label: 'EN' },
-        { code: 'es', label: 'ES' },
-        { code: 'ru', label: 'RU' },
-        { code: 'pt', label: 'PT' },
         { code: 'hi', label: 'HI' },
-        { code: 'ar', label: 'AR' }
+        { code: 'pt', label: 'PT' },
+        { code: 'ru', label: 'RU' },
+        { code: 'es', label: 'ES' }
     ];
 
     return (
@@ -64,7 +72,7 @@ const Navbar = () => {
                             {/* Navbar Button */}
                             <div className="d-flex align-items-center">
                                 <div className="theme-btn me-3">
-                                    <Link to="/contact">Book appointment</Link>
+                                    <Link to="/contact">Book Appointment</Link>
                                 </div>
                                 <div className="language-toggle btn-group" role="group">
                                     {languages.map(({ code, label }) => (

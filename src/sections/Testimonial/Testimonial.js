@@ -13,26 +13,26 @@ const Testimonial = () => {
     const testimonails = [
         {
             'img': imgOne,
-            'name': 'Robert Fox',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Ashley B.',
+            'description' : `I loved my experience with Dr. Al. He is the most gentle and caring dentist I've ever been to. Very recommended! I got a tooth extraction and he did everything possible to make sure I was very well taken care of. Amazing staff as well.`,
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgTwo,
-            'name': 'Albert Flores',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Julie B.',
+            'description' : 'Really friendly and a great dentist! This may have actually been my least painful experience at the dentist. I was seen for a cleaning after hours (which was wonderful for me) and was in and out in 25 minutes. THe staff was really friendly.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgThree,
-            'name': 'Bessie Cooper',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Leslie L.',
+            'description' : 'I made an appointment here the day before I had an opening in my schedule. I got there about 10 or 15 minutes early, and after I finished up my paperwork, they took me right into an examination room.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgOne,
-            'name': 'Bessie Cooper',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Christopher M.',
+            'description' : `I had a toothache for weeks until I couldn't take it anymore. I started calling local dentists from my insurance list and this place was my second call. I called at 2 and they said to come in at 2:30, wow! Staff was friendly!`,
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         }
     ]
@@ -75,12 +75,12 @@ const Testimonial = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <SectionTitle 
-                        subTitle="TESTIMONIAL"
-                        title="What people have said about us"
+                        subTitle="Patient Reviews"
+                        title="Patient Reviews"
                         />
                     </div>
                     <div className="col-lg-6">
-                        <p className="pt-5">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                        <p className="pt-5">We Accept Most Insurances and MassHealth for All Ages.</p>
                     </div>
                 </div>
 

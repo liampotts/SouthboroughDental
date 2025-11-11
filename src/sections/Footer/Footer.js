@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
 import './Footer.scss';
-import { FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaGooglePlusG, FaLinkedinIn} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import call from '../../assets/footer/calling.png';
 import time from '../../assets/footer/time.png';
@@ -10,37 +10,26 @@ import location from '../../assets/footer/location.png';
 const Footer = () => {
 
     const footerMenu = [
-        {
-            'name' : 'About Us',
-            'link' : '/'
-        },
-        {
-            'name' : 'Dental Services',
-            'link' : '/'
-        },
-        {
-            'name' : 'Dentist',
-            'link' : '/'
-        },
-        {
-            'name' : 'Blogs',
-            'link' : '/'
-        },
-        {
-            'name' : 'FAQs',
-            'link' : '/'
-        }
+        { 'name' : 'Welcome', 'link' : '/' },
+        { 'name' : 'About', 'link' : '/about' },
+        { 'name' : 'Services', 'link' : '/services' },
+        { 'name' : 'Pediatric Dentistry', 'link' : '/services' },
+        { 'name' : 'Dental Emergency', 'link' : '/contact' },
+        { 'name' : 'New Patients', 'link' : '/contact' },
+        { 'name' : 'Patient Forms', 'link' : '/contact' },
+        { 'name' : 'Blog', 'link' : '/blogs' },
+        { 'name' : 'Book Appointment', 'link' : '/contact' }
     ];
 
     const footerContacts = [
         {
-            'title': 'Phone Number',
-            'info': '(508) 357- 8800',
+            'title': 'Phone, Fax & Email',
+            'info': ['Phone: (508) 357-8800', 'Fax: (508) 624-0191', 'Email: [email protected]'],
             'icon': call
         },
         {
-            'title': 'Open Hour',
-            'info': ['Monday - Friday: 8 AM - 5:30 PM', 'Saturday: 10 AM - 2 PM'],
+            'title': 'Operating Hours',
+            'info': ['Monday - Friday: 9am - 5:30pm', 'Saturday: 10:00am - 2:00pm'],
             'icon': time
         },
         {
@@ -58,14 +47,16 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p>Southborough Dental is a top-rated local practice for cosmetic, preventative, and restorative dentistry</p>
+                        <p>Providing top-notch dental care in Southborough, MA. Visit Southborough Dental Partners for compassionate, experienced, and comprehensive dental services.</p>
 
                         <div className="social-logo">
                             <p>Follow us on</p>
                             <ul>
-                                <li><a href="/"><FaFacebookF/></a></li>
-                                <li><a href="/"><FaTwitter/></a></li>
-                                <li><a href="/"><FaInstagram/></a></li>
+                                <li><a href="https://www.facebook.com/Southborough-Dental-Partners-100665894651043" target="_blank" rel="noreferrer"><FaFacebookF/></a></li>
+                                <li><a href="https://twitter.com/" target="_blank" rel="noreferrer"><FaTwitter/></a></li>
+                                <li><a href="https://www.google.com/search?q=southborough+dental+partners" target="_blank" rel="noreferrer"><FaGooglePlusG/></a></li>
+                                <li><a href="https://www.instagram.com/southboroughdentalpartners/" target="_blank" rel="noreferrer"><FaInstagram/></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><FaLinkedinIn/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -74,7 +65,7 @@ const Footer = () => {
                             <p>Quick Links</p>
                             <ul>
                                 {
-                                    footerMenu.map(singleMenu => <li><Link to="/">{singleMenu.name}</Link></li>)
+                                    footerMenu.map(singleMenu => <li key={singleMenu.name}><Link to={singleMenu.link}>{singleMenu.name}</Link></li>)
                                 }
                             </ul>
                         </div>
@@ -108,7 +99,7 @@ const Footer = () => {
 
                 <div className="copyright-area">
                     <div className='copy-text'>
-                        <p>&copy; Southborough Dental. All Right Reserved</p>
+                        <p>Southborough Dental Partners &copy; 2025. All Rights Reserved | Powered by 617webmarketing</p>
                     </div>  
                     <div className='copy-links'>
                         <ul>

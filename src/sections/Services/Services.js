@@ -13,10 +13,10 @@ const Services = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-sm-6">
-                        <SectionTitle title="Feel amazing about your oral health" subTitle="Services"/>
+                        <SectionTitle title="Popular Dental Treatments" subTitle="Popular Dental Treatments" description="Southborough Dental Partners offers dental treatments for the entire family."/>
                     </div>
                     <div className="col-lg-6 col-sm-6">
-                        <p className='service-title-text'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                        <p className='service-title-text'>We invite you to explore our website and learn more about our services. New patients are welcome and most insurances are accepted.</p>
                     </div>
                 </div>
 
@@ -28,8 +28,8 @@ const Services = () => {
             </div>
 
             <div className="services-link text-center">
-                <Link to='/'>
-                    View all service list
+                <Link to='/services'>
+                    View all dental services
                     <BsFillArrowRightCircleFill/>
                 </Link>
             </div>
