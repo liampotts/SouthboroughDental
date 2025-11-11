@@ -60,9 +60,13 @@
         flex-wrap: wrap;
         align-items: center;
 
-        a {
+        > a {
             font-weight: 600;
             color: $color-blue;
+        }
+
+        .theme-btn a {
+            color: $color-white;
         }
     }
 }
