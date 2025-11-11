@@ -33,10 +33,10 @@ const Navbar = () => {
             name: 'New Patients',
             path: '/contact',
         },
-        {
-            name: 'Blog',
-            path: '/blogs',
-        },
+        // {
+        //     name: 'Blog',
+        //     path: '/blogs',
+        // },
     ];
 
     const languages = [

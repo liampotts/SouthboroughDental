@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Appointment from '../sections/Appointment/Appointment';
 import Banner from '../sections/Banner/Banner';
-import Blogs from '../sections/Blogs/Blogs';
+// import Blogs from '../sections/Blogs/Blogs';
 import Emergency from '../sections/Emergency/Emergency';
 import Expert from '../sections/Expert/Expert';
 import Features from '../sections/Features/Features';
@@ -21,7 +21,7 @@ const Home = () => {
             <Features />
             <Expert/>
             <Testimonial/>
-            <Blogs/>
+            {/* <Blogs/> */}
             <Appointment/>
             <Footer/>
         </>

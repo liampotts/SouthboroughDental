@@ -28,6 +28,10 @@ const Expert = () => {
                                 </li>
                                 <li>
                                     <BsFillCheckCircleFill />
+                                    Dr. Rana Abood
+                                </li>
+                                <li>
+                                    <BsFillCheckCircleFill />
                                     New patients are welcome and most insurances are accepted.
                                 </li>
                             </ul>
