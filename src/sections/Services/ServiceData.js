@@ -8,21 +8,25 @@ const ServicesData = [
         'icon': iconOne,
         'title': 'Dental Implants',
         'description': 'Replace missing teeth with dental implants for permanent results.',
+        'slug': 'dental-implants',
     },
     {
         'icon': iconTwo,
         'title': 'Teeth Whitening',
         'description': 'Whiten your smile up to 8 shades brighter. Learn more today.',
+        'slug': 'teeth-whitening',
     },
     {
         'icon': iconThree,
-        'title': 'Dental Emergency',
-        'description': 'Call now for tooth pain, tooth damage, or any other dental issue.',
+        'title': 'Root Canal Treatment',
+        'description': 'Relieve tooth pain with gentle root canal treatment in Southborough, MA.',
+        'slug': 'root-canal',
     },
     {
         'icon': iconFour,
-        'title': 'Comprehensive Care',
-        'description': 'Services include exams, cleanings, veneers, Invisalign, and more.',
+        'title': 'Dental Exams',
+        'description': 'Comprehensive exams keep your smile healthy and help catch issues early.',
+        'slug': 'dental-exam',
     }
 ]
 

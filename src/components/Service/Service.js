@@ -4,7 +4,7 @@ import ThemeIcon from '../ThemeIcon/ThemeIcon';
 import './Service.scss';
 
 const Service = ({serviceList}) => {
-    const {title,description, icon} = serviceList;
+    const {title,description, icon, slug} = serviceList;
  
     return (
         <div className='col-lg-3 col-md-4 col-sm-6'>
@@ -15,7 +15,7 @@ const Service = ({serviceList}) => {
                     </div>
                 </div>
                 <div className="service-text">
-                    <h3><Link to="/singleservice">{title}</Link></h3>
+                    <h3><Link to={slug ? `/services/${slug}` : '/services'}>{title}</Link></h3>
                     <p>{description}</p>
                 </div>
            </div>

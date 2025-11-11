@@ -1,0 +1,78 @@
+@import './../sass/colors.scss';
+
+.service-detail-section {
+    padding-top: 160px;
+
+    .service-detail-header {
+        max-width: 800px;
+        margin: 0 auto 60px auto;
+        text-align: center;
+
+        span {
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $color-blue;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 20px 0;
+        }
+
+        p {
+            color: $color-gray;
+        }
+    }
+
+    .service-detail-block {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 18px;
+        padding: 35px;
+        margin-bottom: 25px;
+        background: $color-white;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $color-gray;
+        }
+
+        ul {
+            margin: 15px 0 0 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: $color-black;
+        }
+    }
+
+    .service-detail-cta {
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+
+        a {
+            font-weight: 600;
+            color: $color-blue;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .service-detail-section {
+        padding-top: 130px;
+
+        .service-detail-block {
+            padding: 20px;
+        }
+    }
+}

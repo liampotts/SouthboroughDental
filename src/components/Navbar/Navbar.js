@@ -2,8 +2,14 @@ import React from 'react';
 import './Navbar.scss';
 import logo from './../../assets/logo.png';
 import {Link} from 'react-router-dom';
+import { getServicesMenu } from '../../utils/services';
 
 const Navbar = () => {
+
+    const servicesMenu = getServicesMenu().map(service => ({
+        name: service.title,
+        path: `/services/${service.slug}`
+    }));
 
     const navbarItems = [
         {
@@ -17,10 +23,7 @@ const Navbar = () => {
         {
             name: 'Services',
             path: '/services',
-        },
-        {
-            name: 'Pediatric Dentistry',
-            path: '/services',
+            children: servicesMenu,
         },
         {
             name: 'Dental Emergency',
@@ -62,8 +65,21 @@ const Navbar = () => {
                             <ul className="navbar-nav m-auto mb-2 mb-lg-0">
                                { 
                                 navbarItems.map (navSingle =>
-                                    <li className="nav-item">
+                                    <li className={`nav-item ${navSingle.children ? 'dropdown' : ''}`} key={navSingle.name}>
                                         <Link className="nav-link" to={navSingle.path}>{navSingle.name}</Link>
+                                        {
+                                            navSingle.children && (
+                                                <div className="dropdown-menu">
+                                                    {
+                                                        navSingle.children.map(child => (
+                                                            <Link key={child.path} className="dropdown-item" to={child.path}>
+                                                                {child.name}
+                                                            </Link>
+                                                        ))
+                                                    }
+                                                </div>
+                                            )
+                                        }
                                     </li>
                                     ) 
                                 }
