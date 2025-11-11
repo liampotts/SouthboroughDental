@@ -21,7 +21,7 @@ const Footer = () => {
     const footerContacts = [
         {
             'title': 'Phone, Fax & Email',
-            'info': ['Phone: (508) 357-8800', 'Fax: (508) 624-0191', 'Email: [email protected]'],
+            'info': ['Phone: (508) 357-8800', 'Fax: (508) 624-0191'],
             'icon': call
         },
         {
@@ -44,7 +44,7 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p>Providing top-notch dental care in Southborough, MA. Visit Southborough Dental Partners for compassionate, experienced, and comprehensive dental services.</p>
+                        <p>Providing top-notch dental care in Southborough, MA. </p>
 
                     </div>
                     <div className="col-lg-2 col-md-2">
