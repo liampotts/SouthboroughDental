@@ -88,7 +88,7 @@ const Footer = () => {
 
                 <div className="copyright-area">
                     <div className='copy-text'>
-                        <p>Southborough Dental Partners &copy; 2025. All Rights Reserved | Powered by 617webmarketing</p>
+                        <p>Southborough Dental Partners &copy; 2025. All Rights Reserved</p>
                     </div>  
                     <div className='copy-links'>
                         <ul>
