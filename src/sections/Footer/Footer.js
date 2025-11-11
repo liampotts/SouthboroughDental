@@ -49,16 +49,6 @@ const Footer = () => {
                         </div>
                         <p>Providing top-notch dental care in Southborough, MA. Visit Southborough Dental Partners for compassionate, experienced, and comprehensive dental services.</p>
 
-                        <div className="social-logo">
-                            <p>Follow us on</p>
-                            <ul>
-                                <li><a href="https://www.facebook.com/Southborough-Dental-Partners-100665894651043" target="_blank" rel="noreferrer"><FaFacebookF/></a></li>
-                                <li><a href="https://twitter.com/" target="_blank" rel="noreferrer"><FaTwitter/></a></li>
-                                <li><a href="https://www.google.com/search?q=southborough+dental+partners" target="_blank" rel="noreferrer"><FaGooglePlusG/></a></li>
-                                <li><a href="https://www.instagram.com/southboroughdentalpartners/" target="_blank" rel="noreferrer"><FaInstagram/></a></li>
-                                <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><FaLinkedinIn/></a></li>
-                            </ul>
-                        </div>
                     </div>
                     <div className="col-lg-2 col-md-2">
                         <div className="footer-link">
